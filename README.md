@@ -13,21 +13,28 @@ This project adds the following functions:
 * Add a button to make recordings available
 
 <p align="left">
-  <img src="README.assets/image-start-recording.png" width=30%/>
+  <img src="README.assets/image-start-recording.png" width=50%/>
 </p>
 
 * Add a button to take a shot from a differenct angle
 
 <p align="left">
-  <img src="README.assets/image-shot1.png" width=30%/>
-  <img src="README.assets/image-shot2.png" width=30%/>
-  <img src="README.assets/image-shot3.png" width=30%/>
+  <img src="README.assets/image-shot1.png" width=50%/>
+</p>
+
+<p align="center">
+  <img src="README.assets/image-shot2.png" width=50%/>
+</p>
+
+<p align="right">
+  <img src="README.assets/image-shot3.png" width=50%/>
 </p>
 
 * Add a buttun to stop recordings and share point clouds
 
 <p align="left">
-  <img src="README.assets/image-share.png" width=30%/>
+  <img src="README.assets/image-shot4.png" width=40%/>
+  <img src="README.assets/image-share.png" width=40%/>
 </p>
 
 * Save [ARFrame](https://developer.apple.com/documentation/arkit/arframe) raw data asynchronously at a chosen rate when recording. The selected data include
