@@ -52,7 +52,6 @@ final class ViewController: UIViewController, ARSessionDelegate {
         // UIButton
         recordButton.setTitle("⏺️", for: .normal)
         recordButton.titleLabel?.font = UIFont.systemFont(ofSize: 40)
-        //recordButton.backgroundColor = .systemBlue
         recordButton.layer.cornerRadius = 5
         recordButton.addTarget(self, action: #selector(onButtonClick), for: .touchUpInside)
 
@@ -64,18 +63,17 @@ final class ViewController: UIViewController, ARSessionDelegate {
         takePictureButton.isHidden = true
                 
         let stackView = UIStackView(arrangedSubviews: [
-            recordButton, takePictureButton])
+            takePictureButton, recordButton])
         stackView.isHidden = !isUIEnabled
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
-        stackView.spacing = 10
+        stackView.axis = .horizontal
+        stackView.spacing = 30
         view.addSubview(stackView)
         
         NSLayoutConstraint.activate([
             stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
         ])
-         
     }
     
     override func viewWillAppear(_ animated: Bool) {
